@@ -1,19 +1,36 @@
-.container {
-border: 2px solid red;
-height: 60vh;
-display: flex;
-/* flex-direction: column; */
-align-items: center;
-/* justify-content: center; */
-flex-wrap: wrap;
-align-content: center;
-flex-flow: column wrap-reverse;
-}
-
-.item {
-    margin: 4px;
+.container{
+    width:80vw;
     border: 2px solid black;
-    height: 92px;
-    width: 92px;
-    background-color: violet;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "side article article"
+                         "main main main"
+                         "footer footer footer";
 }
+.box{
+    border: 2px solid red;
+    height: 55px;
+    color: red;
+    /* width: 55px; */
+}
+.box-1{
+   grid-area: nav;
+   background-color: green;
+}
+.box-2{
+    grid-area: side;
+    background-color: blue;
+}
+.box-3{
+   grid-area: article;
+   background-color: brown;
+}
+.box-4{
+   grid-area: main;
+   background-color: purple;
+}
+.box-5{
+    grid-area: footer;
+    background-color: yellow;
+ }
+
